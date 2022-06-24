@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="@dimen/_250sdp"
+        app:cardCornerRadius="@dimen/_4sdp"
+        app:cardElevation="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_gravity="center_horizontal">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/vocabImage"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_20sdp"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/transText"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_icons"
+            android:includeFontPadding="false"
+            android:textSize="@dimen/_21ssp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:fontFamily="@font/days_one"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/playBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+
+            android:id="@+id/playBtn"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/bg_icons"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/ic_volume"
+            app:layout_constraintBottom_toBottomOf="@+id/transText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/transText"
+            app:tint="#000"
+            tools:ignore="MissingConstraints,NotSibling" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/engWordText"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/bg_eng"
+        android:fontFamily="@font/days_one"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="Apple"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_23ssp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/uzWordText"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/bg_trans"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="Olma/Яблоко"
+        android:fontFamily="@font/days_one"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_22ssp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/ruWordText"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/bg_ru"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="Olma/Яблоко"
+        android:fontFamily="@font/days_one"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_22ssp"
+        android:textStyle="bold" />
+
+</LinearLayout>
